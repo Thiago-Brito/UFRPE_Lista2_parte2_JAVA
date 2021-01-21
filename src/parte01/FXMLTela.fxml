@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parte01.FXMLControle">
+   <children>
+      <Button layoutX="99.0" layoutY="117.0" mnemonicParsing="false" onAction="#clique" prefHeight="25.0" prefWidth="102.0" text="Contar" />
+      <Label fx:id="label" alignment="CENTER" layoutX="79.0" layoutY="143.0" prefHeight="33.0" prefWidth="139.0" textFill="#ff0202" />
+      <TextField fx:id="txtBarra" layoutX="25.0" layoutY="40.0" prefHeight="59.0" prefWidth="249.0" />
+      <Text layoutX="24.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Texto:" wrappingWidth="36.803409576416016" />
+   </children>
+</AnchorPane>
