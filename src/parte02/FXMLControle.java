@@ -24,12 +24,12 @@ public class FXMLControle implements Initializable{
 	
 	@FXML
 	private void clique(ActionEvent event) {
-		
+		try {
 		
 		if(txtDescricao.getText().equals("")) {
 			Alert cuidado = new Alert(Alert.AlertType.WARNING);
 			cuidado.setTitle("Alerta");
-			cuidado.setHeaderText("Favor,informar o campo de descrição");
+			cuidado.setHeaderText("Favor,informar o campo de descriï¿½ï¿½o");
 			cuidado.show();
 		}else if(txtValor.getText().equals("")){
 			Alert cuidado = new Alert(Alert.AlertType.WARNING);
@@ -48,8 +48,14 @@ public class FXMLControle implements Initializable{
 		
 		Alert info = new Alert(Alert.AlertType.INFORMATION);
 		info.setTitle("Mensagem");
-		info.setHeaderText("O valor calculado para a venda do produto "+produto01.getDescricao()+" é R$"+produto01.calcularTotal());
+		info.setHeaderText("O valor calculado para a venda do produto "+produto01.getDescricao()+" ï¿½ R$"+produto01.calcularTotal());
 		info.show();}
+		}catch(NumberFormatException nfe) {
+			Alert cuidado = new Alert(Alert.AlertType.WARNING);
+			cuidado.setTitle("Alerta");
+			cuidado.setHeaderText("Favor,informar os campos com o dado certo");
+			cuidado.show();
+		}
 		}
 		
 	
